@@ -1,0 +1,186 @@
+/* So when the screen will be smaller then width indicated below it will resize the navbar, will hide slashes and will make it totally responsive */
+@media only screen and (max-width: 1140px) {
+  nav ul {
+    height: 250px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav ul li span {
+    display: none;
+  }
+}
+
+@font-face {
+  font-family: "Freight Disp Light";
+  src: url("./fonts/Freight\ Disp\ Light.otf");
+}
+/*the navbar height */
+header {
+  height: auto;
+}
+
+body {
+  background-color: #e5e5e5;
+  font-family: "Freight Disp Light";
+}
+/* navbar elements color */
+li a {
+  color: #000000;
+}
+/* Chloe adjustments */
+h2 {
+  font-size: 50px;
+  font-weight: 300;
+  font-style: italic;
+  text-transform: capitalize;
+  margin: auto 30px;
+}
+/* Arranging the nav elements using display flex */
+nav ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+nav ul li {
+  text-transform: uppercase;
+  list-style: none;
+  display: block;
+  text-decoration: none;
+  font-size: 11px;
+  margin: auto;
+  letter-spacing: 0.4em;
+}
+/* Added a hover effect, would look perfect if there were no slashes */
+nav ul li a:hover {
+  transition: 0.1s;
+  background-color: white;
+  border-radius: 3px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+/* set the space between nav elements and slashes */
+nav li a {
+  text-decoration: none;
+  padding: 0 20px;
+}
+
+/* Arranged the images using display flex */
+.image-box {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+/* Added margin so there will be space between when resizing website */
+.image-box img {
+  margin: 5px;
+}
+/* Added a hover effect so the image increase a little bit when you hover over it, I'll be honest I have copy paste this code but it does work.*/
+.image-box img:hover {
+  -ms-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+/* Settings for text follow me on instagram */
+.first-box h3 {
+  text-align: center;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+  font-size: 14px;
+  font-weight: 50;
+}
+/* I have set the background and padding to recreate object like in example from figma*/
+.first-box {
+  background: #fffcf9;
+  padding: 50px;
+}
+
+footer {
+  background-color: #f8f4f0;
+}
+/*Display flex again to postition correctly the objects inside the box*/
+.items-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  height: 300px;
+  align-items: center;
+}
+/* parameters for footer nav elements */
+.items-wrapper ul li {
+  text-transform: uppercase;
+  list-style: none;
+  text-decoration: none;
+  font-size: 11px;
+  margin: 0;
+  letter-spacing: 0.4em;
+  padding-bottom: 20px;
+}
+
+.items-wrapper a {
+  text-decoration: none;
+}
+
+.images-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+/* Added a hover effect so the image increase a little bit when you hover over it */
+.images-wrapper img:hover {
+  -ms-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+}
+
+/* Set the padding to 0 so I have no problems with creating the left and right borders */
+.item-content ul {
+  padding-inline-start: 0px;
+  text-align: center;
+}
+/* Gave to the second child of item-content a width of 30% */
+.item-content:nth-child(2) {
+  width: 30%;
+}
+/* Also gave a width to the third child so the screen won't shake anymore because of the hover effect I will add a little lower*/
+.item-content:nth-child(3) {
+  width: 10%;
+}
+
+/* Created the straight lines between the childs */
+.item-content:nth-child(2) ul {
+  border-left: 1px solid #3c271d;
+  border-right: 1px solid #3c271d;
+}
+
+/* Parameters for paragraph with details about company*/
+.item-content p {
+  font-size: 14px;
+  line-height: 20px;
+  padding-bottom: 15px;
+}
+/* Parameters for Chloe */
+.item-content h2 {
+  font-size: 50px;
+  font-weight: 300;
+  font-style: italic;
+  text-transform: capitalize;
+  margin: auto;
+}
+/* hover effect for nav elements from footer */
+.item-content ul li a:hover {
+  transition: 0.1s;
+  background-color: rgb(228, 228, 217);
+  border-radius: 2px;
+  padding: 10px 25px;
+}
+
+.copyright-bottom {
+  text-align: center;
+  background-color: #fffcf9;
+  padding: 20px 0;
+  color: #3c271d;
+  font-style: normal;
+  font-size: 11px;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+}
